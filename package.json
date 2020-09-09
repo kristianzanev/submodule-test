@@ -1,0 +1,19 @@
+{
+  "name": "submodule-test",
+  "version": "1.0.0",
+  "description": "just a test",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "node server.js",
+    "client": "npm run build --prefix game",
+    "start": "concurrently \"npm run client\" \"npm run server\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^5.3.0",
+    "express": "^4.17.1",
+    "socket.io": "^2.3.0"
+  }
+}
